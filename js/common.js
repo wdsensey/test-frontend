@@ -1,20 +1,31 @@
 $(document).ready(function(){
 
-	$('input[type="range"]').rangeslider({
-	  polyfill: false,
-	});
+  var slider = document.getElementById('slider');
 
-	$('.humburger').on('click', function(e){
-	 $('.header .my-container').toggleClass('open');
-	 $('body').toggleClass('body-overflow');
-	});
+  noUiSlider.create(slider, {
+    start: 2,
+    connect: 'lower',
+    snap: true,
+    range: {
+      'min': 0,
+      '25%': 1,
+      '50%': 2,
+      'max': 4
+    },
+    step: 1,
+  });
 
-	$('.header-link').on('click', function(e){
-	 $('.header .my-container').removeClass('open');
-	 $('body').removeClass('body-overflow');
-	});
+  $('.humburger').on('click', function(e){
+    $('.header .my-container').toggleClass('open');
+    $('body').toggleClass('body-overflow');
+  });
 
-	$("a").on('click', function(event) {
+  $('.header-link').on('click', function(e){
+    $('.header .my-container').removeClass('open');
+    $('body').removeClass('body-overflow');
+  });
+
+  $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
@@ -65,7 +76,7 @@ for (i = 0; i < x.length; i++) {
           }
         }
         h.click();
-    });
+      });
     b.appendChild(c);
   }
   x[i].appendChild(b);

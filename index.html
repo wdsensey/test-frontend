@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/rangeslider.css">
+  <link rel="stylesheet" href="css/nouislider.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Test-frontend</title>
 </head>
@@ -143,7 +143,7 @@
               <div class="step step-3">Использую готовые решения и умею и переделывать</div>
               <div class="step step-4">Пишу сложный JS с нуля</div>
             </div>
-            <input type="range" min="1" max="5" step="1">
+            <div id="slider"></div>
           </div>
         </div>
         <div id="about" class="main-section about">
@@ -151,7 +151,7 @@
           <img class="icon" src="img/icon-about.svg" alt="">
           <h2 class="h2">Расскажите о себе</h2>
           <p class="desc">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
-          <textarea placeholder="Добрый день. Мне понравился ваш подход к поиску кандидата. Понятное ТЗ, быстрый фидбэк, пункуальность. Конечно я хотел больше узнат о стеке задач с которым мне предстоит работать в Вашей компании. Хотелось попробовать себя в создании приложений на vue js, SPA."></textarea>
+          <textarea placeholder="Добрый день. Мне понравился ваш подход к поиску кандидата. Понятное ТЗ, быстрый фидбэк, пункуальность. Конечно я хотел больше узнатm о стеке задач с которым мне предстоит работать в Вашей компании. Хотелось попробовать себя в создании SPA приложений на vue js"></textarea>
         </div>
       </div>
       <div class="button-line">
@@ -161,10 +161,8 @@
   </div>
 </div>
 
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
-<script src="js/common.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
