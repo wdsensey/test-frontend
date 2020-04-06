@@ -1,0 +1,453 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: #000;
+}
+
+.humburger {
+  display: none;
+}
+
+.body-overflow {
+  overflow: hidden;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.my-container {
+  position: relative;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 29px 0;
+}
+
+.header .my-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.header .header-link {
+  font-size: 14px;
+  color: #435993;
+}
+
+.main-banner {
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), url('../img/main-banner-bg-compress.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#FFFFFF)), url('../img/main-banner-bg-compress.jpg');
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), url('../img/main-banner-bg-compress.jpg');
+  padding-top: 120px;
+}
+
+.main-banner .h1 {
+  font-size: 67px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.main {
+  text-align: center;
+}
+
+.main-section {
+  padding-top: 80px;
+}
+
+.main-section .icon {
+  margin-bottom: 20px;
+}
+
+.main-section .h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  display: block;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group label {
+  color: #C8C8C8;
+  font-size: 24px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.form-group input:focus~label,
+.form-group input:valid~label {
+  top: 12px;
+  font-size: 14px;
+}
+
+.info .form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.experience .wrapper {
+  font-size: 0;
+}
+
+.experience .wrapper .col {
+  display: inline-block;
+  width: 33.33%;
+}
+
+/* Customize the label (the container) */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #435993;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #E9EFFF;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #435993;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rangeslider__fill {
+  background: -o-linear-gradient(left, #CCB1F1 0%, #435993 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#CCB1F1), to(#435993));
+  background: linear-gradient(to right, #CCB1F1 0%, #435993 100%);
+  border-radius: 0;
+}
+
+.rangeslider--horizontal {
+  border-radius: 0;
+  position: relative;
+}
+
+.js .steps {
+  font-size: 0;
+}
+
+.js .step {
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.js .step:last-of-type {
+  text-align: right;
+}
+
+.js .step:before {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: url(../img/dots.png);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.js .step:last-of-type:before {
+  left: inherit;
+  right: 0;
+}
+
+.about .wrapper {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.about .h2 {
+  margin-bottom: 10px;
+}
+
+.about .desc {
+  margin-bottom: 40px;
+}
+
+.about textarea {
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  height: 220px;
+  text-align: left !important;
+  padding: 20px;
+  font-size: 20px;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button-line {
+  padding: 70px 0 100px 0;
+}
+
+.button-line button {
+  height: 50px;
+  background: #435993;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.form-group.year {
+  max-width: 320px;
+  margin: 0 auto 25px auto;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  background: url(../img/select-arrow.png);
+  width: 15px;
+  height: 9px;
+  right: 15px;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.select-selected.select-arrow-active:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.select-items div {
+  padding: 2px 15px;
+  cursor: pointer;
+  color: #435993;
+  font-size: 20px;
+}
+
+.select-selected {
+  padding: 5px 15px;
+  cursor: pointer;
+  color: #000;
+  font-size: 20px;
+}
+
+.select-items {
+  padding: 15px 0;
+  position: absolute;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  color: #435993;
+}
+
+.select-hide {
+  display: none;
+}
+
+
+@media(max-width: 767px) {
+  body {
+    padding-top: 78px;
+  }
+  .humburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .humburger div {
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 5px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .header .my-container {
+    position: fixed;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 78px);
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .header .my-container.open {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+ .header .header-link {
+    padding: 15px;
+    display: block;
+  }
+  .experience .wrapper .col {
+    width: 100%;
+  }
+}
